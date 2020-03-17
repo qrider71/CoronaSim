@@ -17,6 +17,7 @@ Date|Germany|Switzerland|Italy|Korea|Singapore
 ## Total number of infected people
 
 Date|Day|Germany|Switzerland|Italy|Korea|Singapore
+----|---|-------|-----------|-----|-----|---------
 2020-02-01|1|7|0|2|12|16
 2020-02-02|2|8|0|2|15|18
 2020-02-03|3|10|0|2|15|18
