@@ -37,8 +37,9 @@ function calc(dates::Array{Date}, data::Array{Float64}, n::Int64)
 
     confidence_intervals = confidence_interval(fit_pow2, 0.1)
     
-    println(fit_pow2.param)
-    println("Confidence interval: $confidence_interval", confidence_intervals)
+    @printf(fit_pow2.param[2])
+    print("\t")
+    println(confidence_intervals[2])
     println("---")
 
 end
@@ -53,29 +54,29 @@ dataIT = convert(Array{Float64}, df.Italy)
 dataKR = convert(Array{Float64}, df.Korea)
 dataSG = convert(Array{Float64}, df.Singapore)
 
-println("Germany")
-calc(dates[1:end], dataDE, 15)
+print("Germany: ")
+# calc(dates[1:end], dataDE, 15)
 calc(dates[1:end], dataDE, 10)
-calc(dates[1:end], dataDE, 5)
+# calc(dates[1:end], dataDE, 5)
 
-println("Switzerland")
-calc(dates[1:end], dataCH, 15)
+print("Switzerland: ")
+# calc(dates[1:end], dataCH, 15)
 calc(dates[1:end], dataCH, 10)
-calc(dates[1:end], dataCH, 5)
+# calc(dates[1:end], dataCH, 5)
 
-println("Italy")
-calc(dates[1:end], dataIT, 15)
+print("Italy: ")
+# calc(dates[1:end], dataIT, 15)
 calc(dates[1:end], dataIT, 10)
-calc(dates[1:end], dataIT, 5)
+# calc(dates[1:end], dataIT, 5)
 
-println("Korea")
-calc(dates[1:end], dataKR, 15)
+print("South Korea: ")
+# calc(dates[1:end], dataKR, 15)
 calc(dates[1:end], dataKR, 10)
-calc(dates[1:end], dataKR, 5)
+# calc(dates[1:end], dataKR, 5)
 
-println("Singapore")
-calc(dates[1:end], dataSG, 15)
+print("Singapore: ")
+# calc(dates[1:end], dataSG, 15)
 calc(dates[1:end], dataSG, 10)
-calc(dates[1:end], dataSG, 5)
+# calc(dates[1:end], dataSG, 5)
 
 
