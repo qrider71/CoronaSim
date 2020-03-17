@@ -17,8 +17,7 @@ function calc(dates::Array{Date}, data::Array{Float64}, n::Int64)
         J[:,1] = 2.0 .^ (t ./ p[2])       #df/dp[1]
 
         c = -log(2.0)*p[1]/(p[2] * p[2])
-
-        J[:,2] =  t .* c .* J[:,1]   #df/dp[2]
+        J[:,2] =  t .* c .* J[:,1]        #df/dp[2]
         J
     end
 
@@ -39,7 +38,7 @@ function calc(dates::Array{Date}, data::Array{Float64}, n::Int64)
     confidence_intervals = confidence_interval(fit_pow2, 0.1)
     
     println(fit_pow2.param)
-    println(confidence_intervals)
+    println("Confidence interval: $confidence_interval", confidence_intervals)
     println("---")
 
 end
