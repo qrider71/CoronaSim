@@ -37,9 +37,9 @@ function calc(dates::Array{Date}, data::Array{Float64}, n::Int64)
 
     confidence_intervals = confidence_interval(fit_pow2, 0.1)
     
-    print(fit_pow2.param[2])
+    print(fit_pow2.param)
     print("\t")
-    println(confidence_intervals[2])
+    println(confidence_intervals)
     println("---")
 
 end
