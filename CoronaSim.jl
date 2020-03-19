@@ -36,8 +36,14 @@ function calc(dates::Array{Date}, data::Array{Float64}, n::Int64)
     fit_pow2 = curve_fit(m_pow2, j_m_pow2, x, y, p0_pow2)
 
     confidence_intervals = confidence_interval(fit_pow2, 0.1)
+
+    p = fit_pow2.param
     
-    print(fit_pow2.param)
+    # y_fitted = m_pow2(x,p)
+    # diff = 100.0*(abs.(y.-y_fitted))./y
+    # println(diff)
+
+    print(p)
     print("\t")
     println(confidence_intervals)
     println("---")
