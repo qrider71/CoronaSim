@@ -50,7 +50,7 @@ function calc(dates::Array{Date}, data::Array{Float64}, n::Int64)
 
 end
 
-df = CSV.File("CoronaDataExport.csv")
+df = CSV.File("CoronaData.csv")
 
 dates = df.Date
 
