@@ -59,10 +59,12 @@ dataCH = convert(Array{Float64}, df.Switzerland)
 dataIT = convert(Array{Float64}, df.Italy)
 dataKR = convert(Array{Float64}, df.Korea)
 dataSG = convert(Array{Float64}, df.Singapore)
+dataUS = convert(Array{Float64}, df.USA)
+
 
 print("Germany: ")
-# calc(dates[1:end], dataDE, 15)
-calc(dates[1:end], dataDE, 10)
+# calc(dates[1:end], dataDE, 10)
+calc(dates[1:end], dataDE, 20)
 # calc(dates[1:end], dataDE, 5)
 
 print("Switzerland: ")
@@ -83,6 +85,11 @@ calc(dates[1:end], dataKR, 10)
 print("Singapore: ")
 # calc(dates[1:end], dataSG, 15)
 calc(dates[1:end], dataSG, 10)
+# calc(dates[1:end], dataSG, 5)
+
+print("USA: ")
+# calc(dates[1:end], dataSG, 15)
+calc(dates[1:end], dataUS, 10)
 # calc(dates[1:end], dataSG, 5)
 
 
