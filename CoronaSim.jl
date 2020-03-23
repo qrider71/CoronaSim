@@ -64,7 +64,7 @@ dataUS = convert(Array{Float64}, df.USA)
 
 print("Germany: ")
 # calc(dates[1:end], dataDE, 10)
-calc(dates[1:end], dataDE, 20)
+calc(dates[1:end], dataDE, 10)
 # calc(dates[1:end], dataDE, 5)
 
 print("Switzerland: ")
