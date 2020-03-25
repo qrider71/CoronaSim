@@ -81,5 +81,7 @@ Date|Day|Germany|Switzerland|Italy|Korea|Singapore|USA
 # Links
 
 - https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html
+
 - https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/
+
 - https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/situation-schweiz-und-international.html
