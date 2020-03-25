@@ -19,6 +19,7 @@ Date|Germany|Switzerland|Italy|Korea|Singapore|USA
 2020-03-20|2.7|3.6|4.9|65.2|8.3|1.8
 2020-03-21|2.7|3.6|5.0|61.8|7.6|1.8
 2020-03-22|2.8|3.5|5.1|58.8|7.1|2.3
+2020-03-23|2.9|3.3|5.4|57.1|7.0|1.8
 
 ## Total number of infected people
 
@@ -75,7 +76,10 @@ Date|Day|Germany|Switzerland|Italy|Korea|Singapore|USA
 2020-03-20|49|13957|3863|41035|8652|345|10442
 2020-03-21|50|18323|4840|47021|8799|385|15219
 2020-03-22|51|22672|6077|53578|8897|432|15219
+2020-03-23|52|27436|8060|59138|8961|455|31573
 
 # Links
 
+- https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html
 - https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/
+- https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/situation-schweiz-und-international.html
