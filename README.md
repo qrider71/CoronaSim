@@ -1,7 +1,6 @@
 # CoronaSim
 The math behind Corona
 
-
 ## The speed of Corona
 
 Date|Germany|Switzerland|Italy|Korea|Singapore|USA
