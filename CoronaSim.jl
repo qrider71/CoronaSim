@@ -25,7 +25,7 @@ function calc(dates::Array{Date}, data::Array{Float64}, n::Int64)
     date1 = dates[end-n+1]
 
     x = map(d -> (d-date1).value, datesWindow)
-    y = data[end-n+1 : end]
+    y = data[end-n+1 : end] .- data[end-n+1];
 
     m_exp(t, p) = p[1] * exp.(p[2] * t)
     p0_exp = [x[1], 0.5]
@@ -50,20 +50,15 @@ function calc(dates::Array{Date}, data::Array{Float64}, n::Int64)
 
 end
 
-df = CSV.File("CoronaData.csv")
+df = CSV.File("CoronaData2.csv")
 
 dates = df.Date
 
 dataDE = convert(Array{Float64}, df.Germany)
 dataCH = convert(Array{Float64}, df.Switzerland)
-dataIT = convert(Array{Float64}, df.Italy)
-dataKR = convert(Array{Float64}, df.Korea)
-dataSG = convert(Array{Float64}, df.Singapore)
-dataUS = convert(Array{Float64}, df.USA)
-
 
 print("Germany: ")
-# calc(dates[1:end], dataDE, 10)
+# calc(dates[1:end], dataDE, 15)
 calc(dates[1:end], dataDE, 10)
 # calc(dates[1:end], dataDE, 5)
 
@@ -71,25 +66,3 @@ print("Switzerland: ")
 # calc(dates[1:end], dataCH, 15)
 calc(dates[1:end], dataCH, 10)
 # calc(dates[1:end], dataCH, 5)
-
-print("Italy: ")
-# calc(dates[1:end], dataIT, 15)
-calc(dates[1:end], dataIT, 10)
-# calc(dates[1:end], dataIT, 5)
-
-print("South Korea: ")
-# calc(dates[1:end], dataKR, 15)
-calc(dates[1:end], dataKR, 10)
-# calc(dates[1:end], dataKR, 5)
-
-print("Singapore: ")
-# calc(dates[1:end], dataSG, 15)
-calc(dates[1:end], dataSG, 10)
-# calc(dates[1:end], dataSG, 5)
-
-print("USA: ")
-# calc(dates[1:end], dataSG, 15)
-calc(dates[1:end], dataUS, 10)
-# calc(dates[1:end], dataSG, 5)
-
-
